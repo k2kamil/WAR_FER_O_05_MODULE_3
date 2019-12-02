@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    height: 80px;
+    background: linear-gradient(lighten(tomato, 10), darken(tomato, 10));
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(darken(tomato, 20), 0.6);
+    z-index: 1;
+}
+
+.header-nav {
+    height: 100%;
+}
+
+.header-nav-list {
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header-nav-list li {
+    height: 100%;
+}
+
+.header-nav-list a {
+    display: block;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Boogaloo', cursive;
+    color: #fff;
+    font-size: 25px;
+}
+
+.banner {
+    margin-top: 80px;
+    height: 600px;
+    background: url(../images/pexels-photo-1427744.jpeg) center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 5px;
+    font-size: calc(16px + 3vw);
+    text-shadow: 0 0 40px rgba(#000, 0.5), 0 0 50px rgba(#000, 0.5);
+    padding: 30px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner h1 {
+    color: #fff;
+    mix-blend-mode: color-dodge;
+}
+
+@supports (mix-blend-mode: color-dodge) {
+    .banner:before {
+        content: attr(data-year);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        font-size: 500px;
+        transform: translate(-50%, -50%);
+        color: tomato;
+        text-shadow: none;
+        mix-blend-mode: color-dodge;
+        white-space: nowrap;
+        line-height: 1;
+        opacity: 0.4;
+    }
+}
+
+.story {
+    padding: 30px;
+}
+
+.story-title {
+    color: tomato;
+    font-size: 3rem;
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center;
+}
+
+.story-text {
+    font-family: Georgia, sans;
+    font-size: 20px;
+    line-height: 1.5em;
+    color: rgba(#000, 0.7);
+}
+
+.story-text img {
+    float:right;
+    margin-left: 20px;
+}
+
+.footer {
+    background: tomato;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.footer small {
+    font-size: 30px;
+}
+
+
+

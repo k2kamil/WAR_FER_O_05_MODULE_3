@@ -1,0 +1,43 @@
+@import "variables"; //plik ze zmiennymi
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+div {
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    margin: 40px;
+    font-size: 35px;
+    font-family: 'Patrick Hand', cursive;
+    transition: 0.4s transform;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 2px dodgerblue,
+                 0 0 14px dodgerblue;
+
+    &:hover {
+        transform: scale(1.2) rotate(90deg)
+    }
+}
+
+@for $i from 1 through 10 {
+    div:nth-of-type(#{$i}) {
+        background: rgba(dodgerblue, 1 - 0.07 * $i );
+    }
+}
+

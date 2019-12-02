@@ -1,0 +1,56 @@
+[class^="exercise"] {
+    border: 1px solid #ddd;
+    padding: 60px 0;
+}
+
+[class^="test"] {
+    border-bottom: 1px solid #ddd;
+    padding: 50px;
+    text-align: center;
+
+    &:first-child {
+        padding-top:0;
+    }
+
+    &:last-child {
+        border:0;
+        padding-bottom:0;
+    }
+}
+
+.exercise3 {
+    display: flex;
+    justify-content: center;
+
+    * {
+        margin: 0 20px;
+    }
+}
+
+.btn-img-1 {
+    background: url(../images/btn1.png) no-repeat;
+    width: 125px;
+    height: 125px;
+    border:0;
+    cursor: pointer;
+}
+
+.btn-img-2 {
+    background: url(../images/btn2.png) no-repeat;
+    width: 125px;
+    height: 125px;
+    border:0;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    padding: 0 30px;
+
+    .col {
+        flex: 1;
+    }
+    .col + .col {
+        margin-left: 30px;
+    }
+}

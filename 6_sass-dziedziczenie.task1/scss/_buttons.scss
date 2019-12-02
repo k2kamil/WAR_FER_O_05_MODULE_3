@@ -1,0 +1,23 @@
+$color-btn : orangered;
+$color-btn2 : mix($color-btn, #8F2D56, 40%);
+
+.btn {
+    border:0;
+    background: $color-btn;
+    color: #fff;
+    font-family: sans-serif;
+    padding: 20px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s opacity, 0.5s filter;
+    background: linear-gradient($color-btn 20%, $color-btn2 80%);
+
+    &:hover {
+        opacity: 0.8;
+        filter: grayscale(1);
+    }
+}

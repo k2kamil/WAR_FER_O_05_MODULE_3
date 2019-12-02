@@ -1,0 +1,37 @@
+.element {
+    box-shadow: 0 2px 6px rgba(#000, 0.1), 0 1px 2px rgba(#000, 0.1);
+    padding: 40px;
+    margin: 60px 0;
+    position: relative;
+}
+.element-header {
+    display: flex;
+    justify-content: space-between;
+}
+.element-title {
+    font-size: 30px;
+}
+.element-actions {
+    font-size: 20px;
+}
+.element-action {
+    display: inline-block;
+    margin-left: 15px;
+    color: #aaa;
+}
+.element-content {
+    margin-top: 20px;
+    color: lighten(#000, 70);
+}
+.element-loading-bg {
+    background: rgba(#fff, 0.8);
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(1px);
+}

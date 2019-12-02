@@ -1,0 +1,20 @@
+.exercise1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.test1 {
+    background: #FF6347;
+}
+.test2 {
+    background: #9370DB;
+}
+.test3 {
+    background: #00FA9A;
+}
+

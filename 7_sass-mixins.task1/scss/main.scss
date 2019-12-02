@@ -1,0 +1,57 @@
+@import "mixins"; //w tym pliku piszmy mixyny
+@import "data"; //ten plik ma dodatkowe stylowanie dla layoutu
+
+//a tutaj ich wuzywajmy
+.exercise1 {
+    ul {
+        margin: 20px;
+
+        li {
+            font-family: sans-serif;
+            padding: 10px;
+            margin: 1px;
+            background: #3ac569;
+            transition: 0.1s background;
+
+            &:hover {
+                background: #f9d423;
+            }
+        }
+    }
+}
+
+.exercise2 {
+}
+
+.exercise3 {
+    .btn-img-1 {
+        background: url(../images/btn1.png) no-repeat;
+        width: 125px;
+        height: 125px;
+        border:0;
+        cursor: pointer;
+    }
+
+    .btn-img-2 {
+        background: url(../images/btn2.png) no-repeat;
+        width: 125px;
+        height: 125px;
+        border:0;
+        cursor: pointer;
+    }
+}
+
+.exercise4 {
+    .block1 {
+        height: 150px;
+        background: goldenrod;
+    }
+    .block2 {
+        height: 150px;
+        background: tomato;
+    }
+    .block3 {
+        height: 150px;
+        background: mediumseagreen;
+    }
+}

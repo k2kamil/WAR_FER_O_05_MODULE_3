@@ -1,0 +1,29 @@
+.loading {
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50px;
+
+    span {
+        margin: 3px;
+        width: 10px;
+        height: 10px;
+        display: block;
+        border-radius: 50%;
+        background: $color;
+
+        @for $i from 1 through 9 {
+            &:nth-of-type(#{$i}) {
+                $delay : (0.05 * $i) * 1s;
+                animation: loading-anim 1s $delay infinite;
+            }
+        }
+    }
+}
+
+@keyframes loading-anim {
+    50% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
