@@ -1,8 +1,9 @@
 @import "variables"; //plik ze zmiennymi
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 100% $font-stack;
     margin: 0;
+    color: $color-primary;
 }
 
 main {
@@ -15,6 +16,7 @@ main {
 }
 
 div {
+    border: 5px solid $color-primary;
     border-radius: 5px;
     width: 100px;
     height: 100px;
@@ -23,7 +25,7 @@ div {
     font-size: 35px;
     font-family: 'Patrick Hand', cursive;
     transition: 0.4s transform;
-    color:#fff;
+    color: $color-primary;
     display: flex;
     justify-content: center;
     align-items: center;
