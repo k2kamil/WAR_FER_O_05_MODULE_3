@@ -1,3 +1,34 @@
+@import 'buttons';
+
+%holder {
+	border-radius: 5px;
+	padding: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.alert {
+  	@extended %holder;
+  	background-color: #FDD692;
+  	border: 2px solid darken(#FDD692, 20);
+  	color: darken(#FDD692, 30);
+}
+
+.info {
+	@extended %holder;
+	background-color: #84B1ED;
+	border: 2px solid darken(#84B1ED, 20);
+	color: darken(#84B1ED, 30);
+}
+
+.error {
+	@extended %holder;
+	background-color: #EC7357;
+	border: 2px solid darken(#EC7357, 20);
+	color: darken(#EC7357, 30);
+}
+
+
 .post {
 	font-family: sans-serif;
 	margin: 20px 0;
@@ -10,12 +41,16 @@
 		line-height: 1.5em;
 	}
 	&-btn {
+		@extend.btn;
 		margin-top:20px;
 		align-self: flex-end;
 	}
 }
 
 .pagination {
+	a {
+		@extend.btn;
+	}
 	display: flex;
 	justify-content: center;
 	list-style: none;
