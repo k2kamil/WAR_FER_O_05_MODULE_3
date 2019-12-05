@@ -1,0 +1,22 @@
+.story {
+  padding: 30px;
+}
+
+.story-title {
+  color: $color-main;
+  font-size: 3rem;
+  font-family: $font-main;
+  text-align: center;
+}
+
+.story-text {
+  font-family: Georgia, sans;
+  font-size: 20px;
+  line-height: 1.5em;
+  color: rgba(#000, 0.7);
+}
+
+.story-text img {
+  float:right;
+  margin-left: 20px;
+}
