@@ -1,3 +1,36 @@
 @import "data"; //dane dla zadania 2 - musi być dołączony
 
+$fontSize: 14px;
+$color: blue;
+$lineHeight: 14px;
 
+@for $i from 1 to 7 {
+  h#{$i}{
+    line-height: $lineHeight - ($i*2);
+    font-size: $fontSize + (6 - $i) *7;
+    color: lighten($color, $i*3);
+  }
+}
+
+@for $i from 1 to 11 {
+  .elem_#{$i}{
+    @if ($i%2 == 0){
+      background-color: #DE6449;
+      width: 200px;
+      height: 200px;
+    } @else {
+      background-color: #FDD692;
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+
+@for $i from 1 through length($colorsList) {
+  $list-val: nth($colorsList, $i);
+  $color: map_get($colorsMap, color_#{$list-val});
+  .picture div:nth-child(#{$i}) {
+    background: $color;
+  }
+}

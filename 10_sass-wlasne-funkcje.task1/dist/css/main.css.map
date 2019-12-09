@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAIA;EACE,cAJoB;EAKpB,eALoB,EAAA;;AAQtB;EACE,iBAToB;EAUpB,kBAVoB,EAAA","file":"main.css","sourcesContent":["@function pxToRem($px){\r\n  @return ($px/16)+rem;\r\n}\r\n\r\n.one {\r\n  width: pxToRem(200);\r\n  height: pxToRem(200);\r\n}\r\n\r\n.two {\r\n  width: pxToRem(265);\r\n  height: pxToRem(265);\r\n}\r\n\r\n"]}
