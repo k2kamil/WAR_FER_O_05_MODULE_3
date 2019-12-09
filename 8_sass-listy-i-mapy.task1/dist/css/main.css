@@ -1,0 +1,66 @@
+.simple-char {
+  box-sizing: border-box;
+  height: calc(100vh - 16px);
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px), linear-gradient(#fff 60%, #ddd);
+  background-size: 50px 50px, cover;
+  background-position: center bottom;
+  position: relative; }
+
+[class*="bar"] {
+  width: calc(15% - 2px);
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  background-color: #eee;
+  border-radius: 5px 5px 0 0;
+  opacity: 0.7;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+  [class*="bar"]:hover {
+    opacity: 1; }
+
+[class*="bar1"] {
+  height: 15%;
+  left: 20%; }
+
+[class*="bar2"] {
+  height: 30%;
+  left: 35%; }
+
+[class*="bar3"] {
+  height: 45%;
+  left: 50%; }
+
+[class*="bar4"] {
+  height: 60%;
+  left: 65%; }
+
+[class*="bar5"] {
+  height: 75%;
+  left: 80%; }
+
+.bar1 {
+  background-color: #AAD962;
+  height: 300px; }
+
+.bar2 {
+  background-color: #FBBF45;
+  height: 230px; }
+
+.bar3 {
+  background-color: #EF6A32;
+  height: 380px; }
+
+.bar4 {
+  background-color: #ED0345;
+  height: 290px; }
+
+.bar5 {
+  background-color: #A12A5E;
+  height: 130px; }
+
+/*# sourceMappingURL=main.css.map */
