@@ -1,13 +1,13 @@
 .loading {
-    font-size: 15px;
+    font-size: 12px;
     display: flex;
     flex-wrap: wrap;
     width: 50px;
 
     span {
-        margin: 3px;
-        width: 10px;
-        height: 10px;
+        margin: 0.3em;
+        width: 1em;
+        height: 1em;
         display: block;
         border-radius: 50%;
         background: $color;

@@ -1,0 +1,184 @@
+html {
+  font-size: calc(16px + 0.25vw); }
+
+body {
+  margin: 0;
+  font-family: sans-serif; }
+
+.container {
+  max-width: 980px;
+  padding: 0 20px;
+  margin: 0 auto; }
+
+.nav {
+  margin: 0;
+  padding: 0; }
+
+.nav-list {
+  display: -webkit-box;
+  display: flex;
+  list-style: none;
+  padding: 30px 0;
+  margin: 0;
+  -webkit-box-pack: end;
+          justify-content: flex-end; }
+
+.nav-list a {
+  margin-left: 30px;
+  color: orangered;
+  text-decoration: none;
+  border: 2px solid orangered;
+  padding: 15px 40px;
+  background: none;
+  border-radius: 50px;
+  display: inline-block; }
+
+@media (max-width: 640px) {
+  .nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column; }
+  .nav-list a {
+    margin: 0 0 20px 0;
+    display: block;
+    text-align: center; } }
+
+.post {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
+
+.post-cover-img {
+  max-width: 100%; }
+
+.post-title {
+  font-size: 2.5rem;
+  color: #3c3958; }
+
+.post-content {
+  font-size: 1.188rem;
+  color: rgba(33, 44, 63, 0.8);
+  line-height: 1.563rem; }
+
+.post-btn {
+  border: 2px solid orangered;
+  color: orangered;
+  padding: 0.938rem 2.5rem;
+  background: none;
+  border-radius: 2.125rem;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 2rem;
+  align-self: flex-end; }
+
+.element {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin: 60px 0;
+  position: relative; }
+
+.element-header {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between; }
+
+.element-title {
+  font-size: 30px; }
+
+.element-actions {
+  font-size: 20px; }
+
+.element-action {
+  display: inline-block;
+  margin-left: 15px;
+  color: #aaa; }
+
+.element-content {
+  margin-top: 20px;
+  color: #b3b3b3; }
+
+.element-loading-bg {
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px); }
+
+.loading {
+  font-size: 12px;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50px; }
+  .loading span {
+    margin: 0.3em;
+    width: 1em;
+    height: 1em;
+    display: block;
+    border-radius: 50%;
+    background: orangered; }
+    .loading span:nth-of-type(1) {
+      -webkit-animation: loading-anim 1s 0.05s infinite;
+              animation: loading-anim 1s 0.05s infinite; }
+    .loading span:nth-of-type(2) {
+      -webkit-animation: loading-anim 1s 0.1s infinite;
+              animation: loading-anim 1s 0.1s infinite; }
+    .loading span:nth-of-type(3) {
+      -webkit-animation: loading-anim 1s 0.15s infinite;
+              animation: loading-anim 1s 0.15s infinite; }
+    .loading span:nth-of-type(4) {
+      -webkit-animation: loading-anim 1s 0.2s infinite;
+              animation: loading-anim 1s 0.2s infinite; }
+    .loading span:nth-of-type(5) {
+      -webkit-animation: loading-anim 1s 0.25s infinite;
+              animation: loading-anim 1s 0.25s infinite; }
+    .loading span:nth-of-type(6) {
+      -webkit-animation: loading-anim 1s 0.3s infinite;
+              animation: loading-anim 1s 0.3s infinite; }
+    .loading span:nth-of-type(7) {
+      -webkit-animation: loading-anim 1s 0.35s infinite;
+              animation: loading-anim 1s 0.35s infinite; }
+    .loading span:nth-of-type(8) {
+      -webkit-animation: loading-anim 1s 0.4s infinite;
+              animation: loading-anim 1s 0.4s infinite; }
+    .loading span:nth-of-type(9) {
+      -webkit-animation: loading-anim 1s 0.45s infinite;
+              animation: loading-anim 1s 0.45s infinite; }
+
+@-webkit-keyframes loading-anim {
+  50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0; } }
+
+@keyframes loading-anim {
+  50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0; } }
+
+.bottom {
+  height: 100vh;
+  background-color: #222;
+  position: relative; }
+  .bottom .box {
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+    background-color: gold; }
+
+/*# sourceMappingURL=main.css.map */
