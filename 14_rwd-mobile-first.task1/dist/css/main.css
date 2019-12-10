@@ -1,0 +1,41 @@
+body {
+  margin: 0; }
+
+.container {
+  background-color: #fff; }
+  .container .sidebar {
+    background-color: black;
+    color: #fff;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    height: 500px;
+    margin: 20px; }
+  .container .main {
+    background-color: blue;
+    color: #fff;
+    height: 500px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    margin: 20px; }
+  @media (min-width: 768px) {
+    .container {
+      display: -webkit-box;
+      display: flex;
+      height: 100vw; }
+      .container .sidebar {
+        width: 300px;
+        margin: 10px 0 10px 10px; }
+      .container .main {
+        -webkit-box-flex: 1;
+                flex-grow: 1;
+        margin: 10px 10px 10px 0; } }
+
+/*# sourceMappingURL=main.css.map */
