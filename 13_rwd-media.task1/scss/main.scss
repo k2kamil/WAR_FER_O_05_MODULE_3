@@ -11,6 +11,11 @@ body {
     left:0;
     width: 100%;
     background: rgba(black, 0.5);
+
+    @media (max-width: 768px) {
+        position: static;
+        background-color: black;
+    }
 }
 .menu-list {
     display: flex;
@@ -19,6 +24,9 @@ body {
     padding:0;
     margin:0;
     justify-content: center;
+    @media(max-width: 768px) {
+        flex-direction: column;
+    }
 }
 .menu-list li {
     height: 100%;
@@ -34,27 +42,53 @@ body {
     color: #fff;
     text-decoration: none;
     border-right: 1px solid rgba(#fff, 0.1);
+    @media(max-width: 768px) {
+        border-right: none;
+        border-bottom: 1px solid rgba(#fff, 0.1);
+    }
+
 }
 .menu-list a:hover {
     background: #fff;
     color: #000;
 }
 .first-section {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: linear-gradient(rgba(#6C49B8, 0.7), rgba(#011627, 0.7)),
+    url("../../images/pexels-photo-546819.jpeg") center bottom / cover no-repeat;
+
+    @media(max-width: 768px){
+        min-height: 500px;
+    }
 }
 .first-section-title {
     font-family: 'Roboto Slab', serif;
     margin: 0;
     text-align: center;
+    color: white;
+    font-size: 3rem;
 }
 .main {
     display: flex;
+    @media (max-width: 768px){
+        flex-direction: column;
+    }
 }
 .article {
     color: #fff;
+    width: 33.3333%;
+    padding: 30px;
+    min-height: 300px;
+    font-size: 14px;
+
+    @media(max-width: 768px){
+        min-height: 0;
+        width: 100%;
+    }
 }
 .article:nth-of-type(1) {
     background: #FFBC42
@@ -68,6 +102,7 @@ body {
 .article-title {
     margin-top: 0;
     font-family: 'Roboto Slab', serif;
+    font-size: 30px;
 }
 .article-text {
 }
@@ -79,4 +114,22 @@ body {
     justify-content: center;
     align-items: center;
     color: #ddd;
+}
+
+@media print {
+    .header {
+        display: none;
+    }
+    .first-section {
+        background: none;
+        min-height: 0;
+    }
+    .first-section-title {
+        text-align: left;
+        color: black;
+    }
+    .article {
+        color: black;
+        padding: 30px 0 0 0;
+    }
 }
