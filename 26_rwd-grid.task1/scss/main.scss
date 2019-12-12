@@ -1,0 +1,34 @@
+@import "grid";
+
+$border: 2px solid black;
+
+.header {
+  border: $border;
+  height: 200px;
+  background-color: tomato;
+}
+
+.left {
+  border: $border;
+  height: 80px;
+  margin-bottom: 20px;
+  background-color: green;
+}
+
+.main {
+  border: $border;
+  height: 400px;
+  background-color: gold;
+}
+
+.right {
+  border: $border;
+  height: 380px;
+  background-color: dodgerblue;
+}
+
+.footer {
+  border: $border;
+  height: 200px;
+  background-color: blue;
+}

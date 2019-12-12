@@ -1,0 +1,61 @@
+.container {
+  margin: 0 150px; }
+  .container [class*="col-"] {
+    box-sizing: border-box;
+    padding: 10px 20px 20px 20px; }
+  @media (min-width: 768px) {
+    .container .row {
+      display: -webkit-box;
+      display: flex; }
+    .container .col-1-12 {
+      width: 8.33333%; }
+    .container .col-2-12 {
+      width: 16.66667%; }
+    .container .col-3-12 {
+      width: 25%; }
+    .container .col-4-12 {
+      width: 33.33333%; }
+    .container .col-5-12 {
+      width: 41.66667%; }
+    .container .col-6-12 {
+      width: 50%; }
+    .container .col-7-12 {
+      width: 58.33333%; }
+    .container .col-8-12 {
+      width: 66.66667%; }
+    .container .col-9-12 {
+      width: 75%; }
+    .container .col-10-12 {
+      width: 83.33333%; }
+    .container .col-11-12 {
+      width: 91.66667%; }
+    .container .col-12-12 {
+      width: 100%; } }
+
+.header {
+  border: 2px solid black;
+  height: 200px;
+  background-color: tomato; }
+
+.left {
+  border: 2px solid black;
+  height: 80px;
+  margin-bottom: 20px;
+  background-color: green; }
+
+.main {
+  border: 2px solid black;
+  height: 400px;
+  background-color: gold; }
+
+.right {
+  border: 2px solid black;
+  height: 380px;
+  background-color: dodgerblue; }
+
+.footer {
+  border: 2px solid black;
+  height: 200px;
+  background-color: blue; }
+
+/*# sourceMappingURL=main.css.map */
