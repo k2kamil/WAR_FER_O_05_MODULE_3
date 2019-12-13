@@ -1,0 +1,89 @@
+.exercise1 div {
+  height: 200px;
+  width: 200px;
+  margin: 2px;
+  border-radius: 5px; }
+
+.exercise2 {
+  margin: 20px 0; }
+  .exercise2 div {
+    height: 30px;
+    margin: 2px;
+    border-radius: 3px; }
+
+.color1 {
+  color: #1a0aed; }
+
+.color2 {
+  color: #3314da; }
+
+.color3 {
+  color: #4d1ec8; }
+
+.color4 {
+  color: #6628b5; }
+
+.color5 {
+  color: #8032a3; }
+
+.color6 {
+  color: #993b91; }
+
+.color7 {
+  color: #b3457e; }
+
+.color8 {
+  color: #cc4f6c; }
+
+.color9 {
+  color: #e65959; }
+
+.color10 {
+  color: tomato; }
+
+.elem1 {
+  background-color: red; }
+
+.elem2 {
+  background-color: blue; }
+
+.elem3 {
+  background-color: black; }
+
+.elem4 {
+  background-color: green; }
+
+.elem5 {
+  background-color: gold; }
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+  background-image: linear-gradient(#fff, #eee); }
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  border-radius: 50%;
+  background-color: blue; }
+
+.rectangle {
+  width: 200px;
+  height: 200px;
+  border: 2px solid red;
+  background-color: green; }
+
+.dialog {
+  width: 200px;
+  padding: 10px;
+  background: blue;
+  border: 1px solid black;
+  margin: 40px auto; }
+  .dialog::after {
+    content: '';
+    height: 10px;
+    width: 10px;
+    border: 2px solid red;
+    background-color: black; }
+
+/*# sourceMappingURL=main.css.map */
