@@ -1,0 +1,24 @@
+$colNumber: 12;
+
+$mainMargin: 10px;
+
+.container {
+  margin: 0 $mainMargin;
+
+  [class*="col-"] {
+    box-sizing: border-box;
+    padding: 10px 20px 20px 20px;
+  }
+
+  @media (min-width: 768px){
+    .row {
+      display: flex;
+    }
+
+    @for $i from 1 through $colNumber {
+      .col-#{$i}-#{$colNumber} {
+        width: (100/$colNumber * $i) * 1%;
+      }
+    }
+  }
+}
