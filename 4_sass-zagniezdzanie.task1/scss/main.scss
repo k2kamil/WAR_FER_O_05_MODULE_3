@@ -2,3 +2,52 @@ body {
     font-family: sans-serif;
     padding: 30px;
 }
+
+$mainColor: crimson;
+
+.list {
+    li {
+        display: inline-block;
+        margin: 2px;
+        background-color: #ddd;
+        height: 80px;
+        width: 150px;
+        line-height: 80px;
+        text-align: center;
+        &:first-child {
+            background-color: $mainColor;
+            border-radius: 40px 0 0 40px;
+        }
+        &:last-child {
+            background-color: $mainColor;
+            border-radius: 0 40px 40px 0;
+        }
+    }
+
+}
+
+.article {
+    h3 {
+        color: $mainColor;
+        font-size: 1.6em;
+        margin-top: 0;
+    }
+    .article-text {
+        font-size: 0.9em;
+        color: #aaa;
+        line-height: 1.35em;
+    }
+
+    .article-btn {
+        color: #fff;
+        border-radius: 5px;
+        margin-top: 20px;
+        background-color: $mainColor;
+        padding: 15px 30px;
+        display: inline-block;
+        &:hover {
+            background-color: darken($mainColor, 20%);
+        }
+    }
+}
+
