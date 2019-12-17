@@ -1,8 +1,8 @@
 {
-  "name": "lab.gulp-instalacja",
+  "name": "1_node.task1",
   "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
+  "description": "W Node.js każdy plik z kodem powinniśmy traktować jak oddzielne zamknięte pudełko. Żeby móc odwołać się do takiego kodu (np. do zmiennych, funkcji) powinniśmy ten plik dołączyć do naszego kodu.",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,11 +10,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "ansi-colors": "^3.2.3",
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
+    "ansi-colors": "^4.1.1",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
-    "node-sass": "^4.11.0"
+    "node-notifier": "^6.0.0",
+    "node-sass": "^4.13.0"
   }
 }

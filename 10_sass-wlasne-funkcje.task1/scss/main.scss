@@ -1,0 +1,22 @@
+@function pxToRem($px){
+  @return ($px/16)+rem;
+}
+
+@function toneColor($color) {
+  @return mix(lighten($color, 20), yellow, 80%);
+}
+
+
+.one {
+  width: pxToRem(200);
+  height: pxToRem(200);
+  background-color: toneColor(red);
+}
+
+.two {
+  width: pxToRem(265);
+  height: pxToRem(265);
+  background-color: toneColor(blue);
+}
+
+

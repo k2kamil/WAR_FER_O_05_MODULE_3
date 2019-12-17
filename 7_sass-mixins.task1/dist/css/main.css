@@ -59,12 +59,83 @@
     .exercise1 ul li:hover {
       background: #f9d423; }
 
+.exercise2 .btn-1 {
+  background: red;
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-family: 'Poiret One', cursive;
+  font-size: 2em; }
+  .exercise2 .btn-1:hover {
+    background: #d60000;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+
+.exercise2 .btn-2 {
+  background: blue;
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-family: 'Poiret One', cursive;
+  font-size: 2em; }
+  .exercise2 .btn-2:hover {
+    background: #0000d6;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+
+.exercise2 .btn-3 {
+  background: green;
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-family: 'Poiret One', cursive;
+  font-size: 2em; }
+  .exercise2 .btn-3:hover {
+    background: #005700;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+
+.exercise2 .btn-4 {
+  background: grey;
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-family: 'Poiret One', cursive;
+  font-size: 2em;
+  width: 150px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  text-overflow: ellipsis; }
+  .exercise2 .btn-4:hover {
+    background: #6c6c6c;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+
 .exercise3 .btn-img-1 {
+  background: black;
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-family: 'Poiret One', cursive;
+  font-size: 2em;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
   background: url(../images/btn1.png) no-repeat;
   width: 125px;
   height: 125px;
   border: 0;
   cursor: pointer; }
+  .exercise3 .btn-img-1:hover {
+    background: black;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
 
 .exercise3 .btn-img-2 {
   background: url(../images/btn2.png) no-repeat;
@@ -74,15 +145,60 @@
   cursor: pointer; }
 
 .exercise4 .block1 {
+  position: relative;
   height: 150px;
   background: goldenrod; }
 
 .exercise4 .block2 {
+  position: relative;
   height: 150px;
   background: tomato; }
 
 .exercise4 .block3 {
+  position: relative;
   height: 150px;
   background: mediumseagreen; }
+
+.exercise4 .block1:before {
+  position: absolute;
+  top: -18px;
+  left: 150px;
+  z-index: 0;
+  color: black;
+  border: solid black;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 3px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  content: ""; }
+
+.exercise4 .block2:before {
+  position: absolute;
+  top: -18px;
+  left: 150px;
+  z-index: 0;
+  color: black;
+  border: solid black;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 3px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  content: ""; }
+
+.exercise4 .block3:before {
+  position: absolute;
+  top: -18px;
+  left: 150px;
+  z-index: 0;
+  color: black;
+  border: solid black;
+  border-width: 0 10px 10px 0;
+  display: inline-block;
+  padding: 3px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  content: ""; }
 
 /*# sourceMappingURL=main.css.map */

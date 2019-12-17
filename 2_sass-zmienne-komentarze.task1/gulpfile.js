@@ -46,7 +46,7 @@ const css = function() {
 }
 
 const watch = function () {
-    gulp.watch('scss/main.scss', gulp.series(css));
+    gulp.watch('scss/**/*.scss', gulp.series(css));
     gulp.watch('*.html').on("change", browserSync.reload);
 }
 

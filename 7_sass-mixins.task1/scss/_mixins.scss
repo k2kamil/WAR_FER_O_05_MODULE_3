@@ -1,0 +1,49 @@
+
+@mixin clearList(){
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin btn($colorbg) {
+  background:$colorbg;
+  color:black;
+  text-decoration:none;
+  padding:5px 10px;
+  border-radius:3px;
+  font-family: 'Poiret One', cursive;
+  font-size:2em;
+
+  &:hover {
+    background:darken($colorbg,8%);
+    transition: all 0.3s ease;
+  }
+}
+
+@mixin truncate($maxWidth){
+  width: $maxWidth;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  text-overflow: ellipsis;
+}
+
+@mixin ir() {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+@mixin arrowTop($size, $color){
+  position: absolute;
+  top: -18px;
+  left: 150px;
+  z-index: 0;
+  color: $color;
+  border: solid black;
+  border-width: $size;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  content:"";
+}

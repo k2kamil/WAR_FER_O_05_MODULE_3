@@ -1,9 +1,11 @@
 .one {
   width: 12.5rem;
-  height: 12.5rem; }
+  height: 12.5rem;
+  background-color: #ff8552; }
 
 .two {
   width: 16.5625rem;
-  height: 16.5625rem; }
+  height: 16.5625rem;
+  background-color: #8585cc; }
 
 /*# sourceMappingURL=main.css.map */

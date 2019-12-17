@@ -4,8 +4,8 @@
 //a tutaj ich wuzywajmy
 .exercise1 {
     ul {
+        @include clearList();
         margin: 20px;
-
         li {
             font-family: sans-serif;
             padding: 10px;
@@ -21,10 +21,31 @@
 }
 
 .exercise2 {
+    .btn-1 {
+        @include btn(red);
+
+
+    }
+
+    .btn-2 {
+        @include btn(blue);
+
+    }
+
+    .btn-3 {
+        @include btn(green);
+    }
+
+    .btn-4 {
+        @include btn(grey);
+        @include truncate(150px);
+    }
 }
 
 .exercise3 {
     .btn-img-1 {
+        @include btn(black);
+        @include ir();
         background: url(../images/btn1.png) no-repeat;
         width: 125px;
         height: 125px;
@@ -43,15 +64,30 @@
 
 .exercise4 {
     .block1 {
+        position: relative;
         height: 150px;
         background: goldenrod;
     }
     .block2 {
+        position: relative;
         height: 150px;
         background: tomato;
     }
     .block3 {
+        position: relative;
         height: 150px;
         background: mediumseagreen;
+    }
+
+    .block1:before {
+        @include arrowTop(0 5px 5px 0, black);
+    }
+
+    .block2:before {
+        @include arrowTop(0 5px 5px 0, black);
+    }
+
+    .block3:before {
+        @include arrowTop(0 10px 10px 0, black);
     }
 }

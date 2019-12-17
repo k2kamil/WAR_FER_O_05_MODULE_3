@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA;EACE,UAAU;EACV,WAAW,EAAA;EAFb;IAKI,YAAY,EAAA","file":"style.css","sourcesContent":["h1{\r\n  color: red;\r\n  margin: 6px;\r\n\r\n  div{\r\n    height: 33px;\r\n  }\r\n}"]}

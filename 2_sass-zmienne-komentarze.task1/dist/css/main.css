@@ -1,7 +1,7 @@
 body {
   font-family: 100% Arial, sans-serif;
   margin: 0;
-  color: black; }
+  color: red; }
 
 main {
   display: -webkit-box;
@@ -15,7 +15,7 @@ main {
   min-height: 100vh; }
 
 div {
-  border: 5px solid black;
+  border: 5px solid green;
   border-radius: 5px;
   width: 100px;
   height: 100px;
@@ -27,7 +27,7 @@ div {
   transition: 0.4s -webkit-transform;
   transition: 0.4s transform;
   transition: 0.4s transform, 0.4s -webkit-transform;
-  color: black;
+  color: green;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;

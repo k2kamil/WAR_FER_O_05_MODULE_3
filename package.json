@@ -15,5 +15,10 @@
     "remote-origin-url": "^2.0.0",
     "rewire": "^4.0.1",
     "sinon": "^6.3.5"
+  },
+  "devDependencies": {
+    "ansi-colors": "^4.1.1",
+    "gulp": "^4.0.2",
+    "validator": "^12.1.0"
   }
 }
