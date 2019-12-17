@@ -1,0 +1,7 @@
+.circle {
+  @include drawItem(circle, blue)
+}
+
+.rectangle {
+  @include drawItem(rectangle, green)
+}

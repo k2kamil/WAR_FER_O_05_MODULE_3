@@ -76,14 +76,21 @@ body {
 .dialog {
   width: 200px;
   padding: 10px;
-  background: blue;
+  background-color: #007E20;
   border: 1px solid black;
-  margin: 40px auto; }
+  margin: 40px auto;
+  position: relative; }
   .dialog::after {
+    position: absolute;
+    top: -7.07px;
+    left: 100px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
     content: '';
-    height: 10px;
+    display: inline-block;
+    border: 1px solid black;
+    background-color: #007E20;
     width: 10px;
-    border: 2px solid red;
-    background-color: black; }
+    height: 10px; }
 
 /*# sourceMappingURL=main.css.map */

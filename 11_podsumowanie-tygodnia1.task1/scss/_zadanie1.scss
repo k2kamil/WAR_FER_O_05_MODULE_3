@@ -1,0 +1,9 @@
+$color1: tomato;
+$color2: blue;
+
+@for $i from 1 through 10 {
+  .color#{$i} {
+    color: mix($color1, $color2, $i*10%);
+  }
+}
+

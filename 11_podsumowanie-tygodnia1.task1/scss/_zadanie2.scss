@@ -1,0 +1,13 @@
+$colorsMap: (
+        elem1: red,
+        elem2: blue,
+        elem3: black,
+        elem4: green,
+        elem5: gold
+);
+
+@for $i from 1 through 5 {
+  .elem#{$i} {
+    background-color: map-get($colorsMap, elem#{$i});
+  }
+}
