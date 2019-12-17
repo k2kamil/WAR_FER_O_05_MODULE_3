@@ -1,5 +1,56 @@
 body {
     margin:0;
     font-family: sans-serif;
+
+}
+
+.layout {
+    margin: 0 100px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: 200px 1fr;
+
+    grid-template-areas:
+            "header header"
+            "main menu"
+;
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 200px 1fr;
+        grid-template-areas: "header" "menu" "main";
+    }
+}
+
+.page-header {
+    background-color: #FF4500;
+    text-align: center;
+    grid-area: header;
+    h1 {
+        line-height: 150px;
+        color: #fff;
+    }
+}
+
+.main-menu {
+    grid-area: menu;
+    li {
+        list-style: none;
+        margin: 15px;
+    }
+}
+
+.main-content {
+    grid-area: main;
+    margin: 3rem 3rem 0 3rem;
+
+    .post {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            display: inline-block;
+            align-self: flex-end;
+        }
+    }
 }
 
